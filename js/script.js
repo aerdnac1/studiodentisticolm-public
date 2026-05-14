@@ -175,3 +175,25 @@ document.addEventListener('DOMContentLoaded', function () {
   // Inizializza tutti i caroselli multi-item
   document.querySelectorAll('.mc-carousel').forEach(initMultiCarousel);
 });
+
+
+// Offusca la mail e il numero di telefono
+// per prevenire spam dai bot
+
+document.addEventListener("DOMContentLoaded", function() {
+  const body = document.body;
+  const email = body.dataset.emailUser + "@" + body.dataset.emailDomain;
+  const links = document.querySelectorAll("a.email-link");
+  links.forEach(link => {
+    link.href = "mailto:" + email;
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const body = document.body;
+  const phone = body.dataset.phoneInt + body.dataset.phonePrefix + body.dataset.phoneNumber;
+  const links = document.querySelectorAll("a.phone-link");
+  links.forEach(link => {
+    link.href = "tel:" + phone;
+  });
+});
