@@ -436,10 +436,10 @@ button.services-card:hover {
 .services-modal-title {
   color: rgba(21, 40, 92, 1);
   font-family: var(--font-base);
-  font-size: 36px;
+  font-size: 46px;
   font-weight: 700;
   letter-spacing: -1.85px;
-  line-height: 36px;
+  line-height: 46px;
 }
 
 .services-modal-subtitle {
@@ -448,7 +448,7 @@ button.services-card:hover {
   font-size: 24px;
   font-weight: 300;
   letter-spacing: -1.23px;
-  line-height: 1.5;
+  line-height: 28px;
   margin-bottom: 1rem;
 }
 
